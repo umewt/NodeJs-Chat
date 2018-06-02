@@ -9,19 +9,19 @@ on('connection', (socket) => {
   Clients.sendToAll("New user connected to room");
     socket.write("ok\r\n");
     socket.
-    on('data', function(msg) {
+    on('data', (msg) => {
       Clients.sendExcept(socket, msg);
     });
     socket.
     on('end', () => {
-      Clients.revoke(this.socket);
+      Clients.revoke(socket);
       //Send Fin Back
       socket.close();
     });
     socket.
     on('error', (code) =>
     {
-      Clients.revoke(this.socket);
+      Clients.revoke(socket);
 
     });
 
