@@ -1,3 +1,11 @@
+var _ = {
+  without : function(arr,ele) {
+
+    var filarr = arr.filter((e) => { if(e !== ele) {return e;} });
+    return filarr;
+
+    }
+  };
 
 module.exports = {
   sockets: [],
@@ -16,6 +24,6 @@ module.exports = {
   sendExcept(socket, message)
   {
     var t = _.without(this.sockets, socket);
-    t.forEach((socket) => {socket.write(message)});
+    t.forEach((s) => {s.write(message)});
   }
 };
