@@ -1,6 +1,6 @@
 # NodeJs-Chat-MultipleClients
 Basic NodeJS chat using core Node Components, supports multiple clients.
-Note: Also has underscore as an dependency, can easily be removed (possible added branch -> no underscore)
+Note: Also has underscore as an dependency, can easily be removed ( added branch -> no underscore)
 
 Change the port, ip in app.js files on both server and client directory to use on different ports or perhaps allow external connections.
 
