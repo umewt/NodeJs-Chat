@@ -1,4 +1,4 @@
-# NodeJs-Chat-Multiple
+# NodeJs-Chat-MultipleClients
 Basic NodeJS chat using core Node Components, supports multiple clients.
 Note: Also has underscore as an dependency, can easily be removed (possible added branch -> no underscore)
 
