@@ -1,6 +1,6 @@
 const net = require('net');
-var   Clients = require('./clients.js'),
-      _ = require('underscore');
+var   Clients = require('./clients.js');
+
 const server = new net.Server({});
 
 server.
